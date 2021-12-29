@@ -1,4 +1,4 @@
-# Spring Bootcamp HomeWorks
+# Spring Bootcamp Homeworks
 
 > ## Week One ->
 
