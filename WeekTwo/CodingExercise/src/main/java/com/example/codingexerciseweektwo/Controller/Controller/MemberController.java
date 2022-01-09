@@ -7,6 +7,7 @@ import com.example.codingexerciseweektwo.Controller.Class.Watchlist;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiModelProperty;
 import io.swagger.annotations.ApiOperation;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,15 +16,12 @@ import java.util.stream.Collectors;
 
 @RestController
 @Api(value="Member Controller API Documents")
+@RequiredArgsConstructor
 
 public class MemberController {
 
     @ApiModelProperty(value = "We are editing this list.")
     private final MainInit mainInit;
-
-    public MemberController(MainInit mainInit){
-        this.mainInit = mainInit;
-    }
 
     @PostMapping("/movies/vote/{memberId}/{moviesId}/{votingPoint}")
     @ApiOperation(value = "The method vote for Movies. Depends on memberId and moviesId")

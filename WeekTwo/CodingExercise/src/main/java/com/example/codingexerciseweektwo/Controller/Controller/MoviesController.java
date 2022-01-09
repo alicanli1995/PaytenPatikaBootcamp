@@ -6,6 +6,8 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import io.swagger.annotations.ApiOperation;
+import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -18,15 +20,13 @@ import java.util.stream.Collectors;
 @Configuration
 @RestController
 @Api(value="Movie Controller API Documents")
+@RequiredArgsConstructor
 
 public class MoviesController {
 
     @ApiModelProperty(value = "We are editing this list.")
     private final MainInit mainInit;
 
-    public MoviesController(MainInit mainInit){
-        this.mainInit = mainInit;
-    }
 
     @GetMapping("/movies")
     @ApiOperation(value = "List all movies list.",notes = "The methods returns Https.OK")
