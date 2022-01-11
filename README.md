@@ -25,3 +25,13 @@
 * Developing RESTful services with Spring Boot
 * Clean Code Book; Meaningful Names, Functions, Comments
 ```
+
+> ## Week Three -> 
+
+```
+* Sql ve Postgresql
+* ORM Tools
+* Spring Data
+* @Transactional
+* JPA
+```
