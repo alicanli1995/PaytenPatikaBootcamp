@@ -33,5 +33,5 @@
 * ORM Tools
 * Spring Data
 * @Transactional
-* JPA
+* Layered Architecture
 ```
