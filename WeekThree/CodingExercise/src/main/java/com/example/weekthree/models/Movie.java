@@ -8,6 +8,7 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
 import java.util.List;
+import java.util.stream.Stream;
 
 @Getter
 @Builder
@@ -20,7 +21,7 @@ public class Movie {
     private GENRE genre;
     private Integer releaseYear;
     private String director;
-    private List<CastResponse> castList;
+    //private List<CastResponse> castList;
 
 
     public MovieEntity convertToMovieEntity(){
@@ -43,6 +44,8 @@ public class Movie {
                 .director(movieEntity.getDirector())
                 .build();
     }
+
+
 
 
 }

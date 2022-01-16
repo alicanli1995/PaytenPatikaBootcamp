@@ -40,5 +40,10 @@ public class MovieDtoImpl implements MovieDto{
          return movieJpaDto.findAllByMovie();
     }
 
+    @Override
+    public List<MovieEntity> retrieveAll(List<Long> getMoviesById) {
+        return movieJpaDto.findAllById(getMoviesById);
+    }
+
 
 }

@@ -8,4 +8,6 @@ public interface MovieDto {
     MovieEntity retrieve(Long id);
     void delete(Long id);
     List<MovieEntity> getAllVoteMovies();
+
+    List<MovieEntity> retrieveAll(List<Long> getMoviesById);
 }

@@ -1,6 +1,7 @@
 package com.example.weekthree.controller.request;
 
 import com.example.weekthree.models.ModifyList;
+import com.example.weekthree.models.WatchList;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -12,10 +13,7 @@ import lombok.Setter;
 public class ModifyRequest {
 
     private Long watchlistId;
-
-
     private Long movieId;
-
 
     public ModifyList convertToModify() {
         return ModifyList.builder()

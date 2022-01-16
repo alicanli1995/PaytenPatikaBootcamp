@@ -39,6 +39,15 @@ public class MovieServiceImpl implements MovieService {
         return movieDto.getAllVoteMovies()
                 .stream()
                 .map(Movie::convertFromEntity)
-                .collect(Collectors.toList());
+                .toList();
+    }
+
+    @Override
+    public List<Movie> retrieveAllV1(List<Long> getMoviesById) {
+        return movieDto.retrieveAll(getMoviesById)
+                .stream()
+                .map(Movie::convertFromEntity)
+                .toList();
+
     }
 }

@@ -5,6 +5,7 @@ import com.example.weekthree.controller.request.ModifyRequest;
 import com.example.weekthree.controller.request.WatchListRequest;
 import com.example.weekthree.controller.response.WatchListResponse;
 import com.example.weekthree.models.ModifyList;
+import com.example.weekthree.models.Movie;
 import com.example.weekthree.models.WatchList;
 import com.example.weekthree.services.*;
 import lombok.RequiredArgsConstructor;
@@ -30,9 +31,9 @@ public class WatchlistController {
 
      */
 
-
     private final WatchlistService watchListService;
     private final ModifyService modifyService;
+    private final MovieService movieService;
 
     @PostMapping("/watchlist/create")
     @ResponseStatus(HttpStatus.CREATED)
@@ -50,9 +51,17 @@ public class WatchlistController {
 
     @PostMapping("/watchlist/modify/add")
     @ResponseStatus(HttpStatus.CREATED)
-    public void addMovies(@RequestBody @Valid ModifyRequest modifyRequest){
+    public Movie addMovies(@RequestBody @Valid ModifyRequest modifyRequest){
         ModifyList modifyList = modifyRequest.convertToModify();
-        modifyService.modifyList(modifyList);
+        Long movieId = modifyService.modifyListAdd(modifyList);
+        return movieService.retrieve(movieId);
+    }
+
+    @GetMapping("/watchlist/{watchListId}/movies")
+    @ResponseStatus(HttpStatus.FOUND)
+    public List<Movie> getMoviesOnId(@PathVariable Long watchListId){
+        List<Long> getMoviesById = modifyService.retriveByWatchListId(watchListId);
+        return (movieService.retrieveAllV1(getMoviesById));
     }
 
     @DeleteMapping("/watchlist/modify/delete")

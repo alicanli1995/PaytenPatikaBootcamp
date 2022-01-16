@@ -7,6 +7,7 @@ import com.example.weekthree.dto.VoteEntity;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.time.LocalDateTime;
 
@@ -14,7 +15,7 @@ import java.time.LocalDateTime;
 @Getter
 @Builder
 @EqualsAndHashCode
-
+@Setter
 
 public class Vote {
 
@@ -22,11 +23,13 @@ public class Vote {
     private Long movieId;
     private Integer moviePoint;
     private LocalDateTime createdDate;
+    private Movie movie;
 
     public static Vote convertFromEntity(VoteEntity voteEntity)
     {
         return Vote.builder()
                 .createdDate(voteEntity.getCreatedDate())
+                .movie(Movie.convertFromEntity(voteEntity.getMovie()))
                 .memberId(voteEntity.getMemberId())
                 .movieId(voteEntity.getMovie().getId())
                 .moviePoint(voteEntity.getMoviePoint())
@@ -41,7 +44,5 @@ public class Vote {
         entity.setMoviePoint(moviePoint);
         return entity;
     }
-
-
 
 }

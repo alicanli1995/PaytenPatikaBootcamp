@@ -24,10 +24,4 @@ public class ModifyListEntity {
     @JoinColumn(nullable = false)
     private WatchlistEntity watchlistEntity;
 
-    @Column(nullable = false)
-    private Long moviesId;
-
-    @Column(nullable = false)
-    private Long watchlistId;
-
 }

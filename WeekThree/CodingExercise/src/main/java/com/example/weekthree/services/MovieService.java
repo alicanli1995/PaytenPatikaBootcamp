@@ -9,4 +9,5 @@ public interface MovieService {
     Movie retrieve(Long id);
     void delete(Long id);
     List<Movie> getAllVoteMovies();
+    List<Movie> retrieveAllV1(List<Long> getMoviesById);
 }
