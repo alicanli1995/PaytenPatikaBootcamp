@@ -8,5 +8,5 @@ import java.util.List;
 public interface ModifyService {
     Long modifyListAdd(ModifyList modifyList);
     void remove(ModifyList modifyList);
-    List<Long> retriveByWatchListId(Long watchListId);
+    List<Long> retreiveByWatchListId(Long watchListId);
 }

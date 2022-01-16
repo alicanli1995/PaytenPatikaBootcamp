@@ -60,7 +60,7 @@ public class WatchlistController {
     @GetMapping("/watchlist/{watchListId}/movies")
     @ResponseStatus(HttpStatus.FOUND)
     public List<Movie> getMoviesOnId(@PathVariable Long watchListId){
-        List<Long> getMoviesById = modifyService.retriveByWatchListId(watchListId);
+        List<Long> getMoviesById = modifyService.retreiveByWatchListId(watchListId);
         return (movieService.retrieveAllV1(getMoviesById));
     }
 

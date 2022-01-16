@@ -1,14 +1,11 @@
 package com.example.weekthree.controller.request;
 
 import com.example.weekthree.models.ModifyList;
-import com.example.weekthree.models.WatchList;
 import lombok.Getter;
 import lombok.Setter;
 
-
 @Getter
 @Setter
-
 
 public class ModifyRequest {
 

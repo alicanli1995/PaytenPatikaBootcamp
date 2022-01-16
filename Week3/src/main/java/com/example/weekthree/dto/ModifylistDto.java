@@ -9,7 +9,6 @@ public interface ModifylistDto {
     void addToList(ModifyListEntity modifyListEntity);
     ModifyListEntity retrieve(ModifyList modifyList);
     void remove(ModifyListEntity modifyListEntity);
-
     List<Long> findByMovies(Long watchListId);
 }
 

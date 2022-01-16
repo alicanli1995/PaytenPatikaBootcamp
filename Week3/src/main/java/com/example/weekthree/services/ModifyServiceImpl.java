@@ -33,7 +33,7 @@ public class ModifyServiceImpl implements ModifyService{
     }
 
     @Override
-    public List<Long> retriveByWatchListId(Long watchListId) {
+    public List<Long> retreiveByWatchListId(Long watchListId) {
         return modifylistDto.findByMovies(watchListId);
     }
 
