@@ -1,5 +1,7 @@
 # Spring Bootcamp Homeworks
 
+*This is the bootcamp "Patika.dev" and Payten d.o.o. it is regulated by companies. The bootcamp will be completed in a period of 7 weeks( 70 hours). The information we have learned during this bootcamp is also included down week by week.*
+
 > ## Week One ->
 
 ```
