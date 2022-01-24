@@ -58,4 +58,4 @@
 * CAP Theorem
 * Polygot Persistence
 * Hexagonal Architecture
-´´´
+```
