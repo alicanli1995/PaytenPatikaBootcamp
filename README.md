@@ -51,13 +51,11 @@
 
 > ## Week Five ->
 
-´´´
-
+```
 * NoSQL
 * Redis
 * MongoDB
 * CAP Theorem
 * Polygot Persistence
 * Hexagonal Architecture
-
 ´´´
