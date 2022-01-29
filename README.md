@@ -48,3 +48,14 @@
 * Test Doubles
 * Clean Code Test Section
 ```
+
+> ## Week Five ->
+
+```
+* NoSQL
+* Redis
+* MongoDB
+* CAP Theorem
+* Polygot Persistence
+* Hexagonal Architecture
+```
