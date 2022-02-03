@@ -90,7 +90,7 @@
 
 # 7. Microservice chassis pattern’ ı kısaca açıklayınız.
 
- *Yeniden kullanılabilirlik, geliştirici hayatımızın en başında öğrendiğimiz bir şeydir. Bu model, ortak mantığı ayrı bir katmana soyutlayarak hizmetler arasındaki artıklık faktörünü ve karmaşıklığı azaltır. Çok genel bir chassis'iniz varsa, platformlar veya kuruluşlar arasında bile kullanılabilir ve belirli bir projeyle sınırlandırılması gerekmez. Nasıl yazdığınıza ve bu çerçeveye hangi mantıkla hareket ettiğinize bağlıdır. *
+ *Yeniden kullanılabilirlik, geliştirici hayatımızın en başında öğrendiğimiz bir şeydir. Bu model, ortak mantığı ayrı bir katmana soyutlayarak hizmetler arasındaki artıklık faktörünü ve karmaşıklığı azaltır. Çok genel bir chassis'iniz varsa, platformlar veya kuruluşlar arasında bile kullanılabilir ve belirli bir projeyle sınırlandırılması gerekmez. Nasıl yazdığınıza ve bu çerçeveye hangi mantıkla hareket ettiğinize bağlıdır.*
 
  *Chassis pattern, mikro hizmetler altyapı katmanınızın bir parçasıdır. Her türlü bağlantıyı, yapılandırmayı ve izlemeyi bir temel çerçeveye taşıyabilirsiniz.*
 
